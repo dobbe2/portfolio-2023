@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './index.css';
-import Header from "./components/ui/Header.jsx"
-import Hero from "./components/ui/Hero.jsx"
+import Header from "./components/ui/Header.jsx";
+import Hero from "./components/ui/Hero.jsx";
+import About from "./components/ui/About.jsx";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header />
       <Hero />
+      <About />
     </div>
   );
 }
