@@ -17,4 +17,8 @@ code {
     monospace;
 }
 
+#nav-bar {
+  box-shadow: 1px -8px 18px 6px grey;
+}
+
 

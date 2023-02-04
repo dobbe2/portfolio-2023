@@ -5,12 +5,12 @@ import {
   Bars3Icon,
   ChartBarIcon,
   CursorArrowRaysIcon,
-  DocumentChartBarIcon,
+//   DocumentChartBarIcon,
   ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+// import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const solutions = [
   {
@@ -39,28 +39,28 @@ const solutions = [
     icon: ArrowPathIcon,
   },
 ]
-const resources = [
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-  },
-  { name: 'Guides', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
-  { name: 'Events', description: 'See what meet-ups and other events we might be planning near you.', href: '#' },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#' },
-]
+// const resources = [
+//   {
+//     name: 'Help Center',
+//     description: 'Get all of your questions answered in our forums or contact support.',
+//     href: '#',
+//   },
+//   { name: 'Guides', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
+//   { name: 'Events', description: 'See what meet-ups and other events we might be planning near you.', href: '#' },
+//   { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#' },
+// ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ')
+// }
 
 export default function Example() {
   return (
-    <Popover className="relative bg-grey-100">
+    <Popover id="nav-bar" className="relative bg-grey-100">
       <div className="flex items-center justify-between p-6 md:justify-start md:space-x-10">
         <div>
           <a href="#" className="flex">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">James Dobbe Portfolio</span>
             <img
               className="h-8 w-auto sm:h-10"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
