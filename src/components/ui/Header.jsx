@@ -5,12 +5,12 @@ import {
   Bars3Icon,
   ChartBarIcon,
   CursorArrowRaysIcon,
-//   DocumentChartBarIcon,
   ShieldCheckIcon,
   Squares2X2Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-// import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import NavLink from '../Nav-Link';
+import Button from '../Button';
 
 const solutions = [
   {
@@ -39,31 +39,17 @@ const solutions = [
     icon: ArrowPathIcon,
   },
 ]
-// const resources = [
-//   {
-//     name: 'Help Center',
-//     description: 'Get all of your questions answered in our forums or contact support.',
-//     href: '#',
-//   },
-//   { name: 'Guides', description: 'Learn how to maximize our platform to get the most out of it.', href: '#' },
-//   { name: 'Events', description: 'See what meet-ups and other events we might be planning near you.', href: '#' },
-//   { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#' },
-// ]
 
-// function classNames(...classes) {
-//   return classes.filter(Boolean).join(' ')
-// }
-
-export default function Example() {
+export default function Navbar() {
   return (
-    <Popover id="nav-bar" className="relative bg-grey-100">
+    <Popover id="nav-bar" className="relative bg-purple-heart opacity-95">
       <div className="flex items-center justify-between p-6 md:justify-start md:space-x-10">
         <div>
           <a href="#" className="flex">
             <span className="sr-only">James Dobbe Portfolio</span>
             <img
               className="h-8 w-auto sm:h-10"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src="https://tailwindui.com/img/logos/mark.svg?color=white"
               alt=""
             />
           </a>
@@ -75,19 +61,14 @@ export default function Example() {
           </Popover.Button>
         </div>
         <div className="hidden md:flex md:flex-1 md:items-center md:justify-end">
-          <Popover.Group as="nav" className="flex space-x-10">
-            <Popover className="relative">
-              {({ open }) => (
+         <Popover.Group as="nav" className="flex space-x-10">
+            {/*  <Popover className="relative"> */}
+              {/* {({ open }) => ( */}
                 <>
-                  {/* <Popover.Button
-                    className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-                    )}
-                  > */}
-                  <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                <NavLink href="#" label="About" />
+                  {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               About
-            </a>
+            </a> */}
                     {/* <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
@@ -99,14 +80,16 @@ export default function Example() {
 
                  
                 </>
-              )}
-            </Popover>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              {/* )} */}
+            {/* </Popover> */}
+            <NavLink href="#" label="Experience" />
+            {/* <a href="#" className="text-base font-medium text-mercury hover:text-dusty-gray">
               Experience
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+            </a> */}
+            <NavLink href="#" label="Work" />
+            {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Work
-            </a>
+            </a> */}
 
             <Popover className="relative">
               {({ open }) => (
@@ -117,9 +100,10 @@ export default function Example() {
                       'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   > */}
-                  <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  <NavLink href="#" label="Contact" />
+                  {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Contact
-            </a>
+            </a> */}
                     {/* <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
@@ -138,12 +122,13 @@ export default function Example() {
             {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Sign in
             </a> */}
-            <a
+            <Button label="Resume" className="text-base" />
+            {/* <a
               href="#"
               className="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
               Resume
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
@@ -157,14 +142,14 @@ export default function Example() {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+        <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden bg-purple-heart">
           <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
                     alt="Your Company"
                   />
                 </div>
@@ -186,7 +171,7 @@ export default function Example() {
                       <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white">
                         <item.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
-                      <div className="ml-4 text-base font-medium text-gray-900">{item.name}</div>
+                      <div className="ml-4 text-base font-medium text-mercury">{item.name}</div>
                     </a>
                   ))}
                 </nav>
