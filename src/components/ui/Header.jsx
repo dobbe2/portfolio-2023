@@ -42,6 +42,7 @@ const solutions = [
 
 export default function Navbar() {
   return (
+    <header className="sticky top-0 z-50">
     <Popover id="nav-bar" className="relative bg-purple-heart opacity-95">
       <div className="flex items-center justify-between p-6 md:justify-start md:space-x-10">
         <div>
@@ -219,5 +220,6 @@ export default function Navbar() {
         </Popover.Panel>
       </Transition>
     </Popover>
+    </header>
   )
 }
