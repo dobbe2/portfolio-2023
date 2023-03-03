@@ -1,4 +1,5 @@
 import Me from "../../assets/images/me.jpg";
+import Para from "../Para";
 
 export default function About() {
   return (
@@ -56,20 +57,18 @@ export default function About() {
           </div>
           <div className="mt-8 lg:mt-0">
             <div className="mx-auto text-base lg:max-w-none">
-              <p className="text-lg text-gray-500">
-                My name is James Dobbe, and I am a junior front-end web developer with a background in creative arts and management. I have earned a certificate in full-stack development from the University of Washington. I have learned to create dynamic, repsonsive apps using HTML and CSS, as well as skills in Javascript and React. My passion shines through in design, functionality, and efficiency. In many of my projects, I took the lead design role, creating polished and professional products. I have been greatly appreciated by my coworkers and management at my first front-end developer job. 
-              </p>
+              <Para>
+              Hello! My name is James Dobbe and I enjoy building websites and designing for new and growing businesses. My intrest in front end web development is fueled by a mix of artistic and logical path that gets enjoyment from building both interesting and beautiful pages and components.               </Para>
             </div>
             <div className="prose prose-indigo mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
-              <p>
-                I have experience working for the Blockchain Center, focusing on React and Typescript to redesign an NFT Marketplace, Price Feeds, and other applications for the ZAP Protocol project. I took part in design team meetings, developer handoffs of materials and designs, and helped to write and assign tickets using Github. My time at this position taught me valuable technologies and gave me confidence in my craft.
-              </p>
-              <p>
-                My family is most important to me. I have a beautiful wife, Becky, a 4 year old son, Cruz, a 15 year old daughter, Morgan, and a 2 year old girl, Haven. We have a tabby cat, Apollo, and we have an Australian Shepard/Border Collie mix named Lucy. Some of my hobbies include playing piano and guitar, pyrography (wood burning), snowboarding, playing retro video games, going to Seattle Mariners games, and making pizzas.
-              </p>
-              <p>
+              <Para>
+                I've worked for a Large Cryto firm helping to build and implement a complete redesign of a handful of applications for actuive users, including an NFT marketplace, and a Voting/Ballot monitoring app.              </Para>
+              <Para>
+                I have also worked with businesses to build modern websites that are designed to help drive more traffic and engage their users.
+              </Para>
+              <Para>
                 Here are a few technologies I've been working with recently:
-              </p>
+              </Para>
               <div class="grid grid-cols-2 gap-4">
                 <ul>
                     <li>React</li>
