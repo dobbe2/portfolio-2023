@@ -11,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 import NavLink from '../Nav-Link';
 import Button from '../Button';
+import LogoViking from '../../assets/images/LogoViking.svg';
 
 const solutions = [
   {
@@ -50,7 +51,7 @@ export default function Navbar() {
             <span className="sr-only">James Dobbe Portfolio</span>
             <img
               className="h-8 w-auto sm:h-10"
-              src="https://tailwindui.com/img/logos/mark.svg?color=white"
+              src={LogoViking}
               alt=""
             />
           </a>
@@ -150,7 +151,7 @@ export default function Navbar() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
+                    src={LogoViking}
                     alt="Your Company"
                   />
                 </div>
