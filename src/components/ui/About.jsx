@@ -1,6 +1,6 @@
 import Me from "../../assets/images/me.jpg";
 
-export default function Example() {
+export default function About() {
   return (
     <div className="overflow-hidden bg-white">
       <div className="relative w-full py-16 px-6 md:px-24 md:p-24 ">
@@ -57,42 +57,30 @@ export default function Example() {
           <div className="mt-8 lg:mt-0">
             <div className="mx-auto text-base lg:max-w-none">
               <p className="text-lg text-gray-500">
-                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                pellentesque. Blandit amet, sed aenean erat arcu morbi.
+                My name is James Dobbe, and I am a junior front-end web developer with a background in creative arts and management. I have earned a certificate in full-stack development from the University of Washington. I have learned to create dynamic, repsonsive apps using HTML and CSS, as well as skills in Javascript and React. My passion shines through in design, functionality, and efficiency. In many of my projects, I took the lead design role, creating polished and professional products. I have been greatly appreciated by my coworkers and management at my first front-end developer job. 
               </p>
             </div>
             <div className="prose prose-indigo mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
               <p>
-                Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget
-                pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.
+                I have experience working for the Blockchain Center, focusing on React and Typescript to redesign an NFT Marketplace, Price Feeds, and other applications for the ZAP Protocol project. I took part in design team meetings, developer handoffs of materials and designs, and helped to write and assign tickets using Github. My time at this position taught me valuable technologies and gave me confidence in my craft.
               </p>
               <p>
-                Bibendum eu nulla feugiat justo, elit adipiscing. Ut tristique sit nisi lorem pulvinar. Urna, laoreet
-                fusce nibh leo. Dictum et et et sit. Faucibus sed non gravida lectus dignissim imperdiet a.
+                My family is most important to me. I have a beautiful wife, Becky, a 4 year old son, Cruz, a 15 year old daughter, Morgan, and a 2 year old girl, Haven. We have a tabby cat, Apollo, and we have an Australian Shepard/Border Collie mix named Lucy. Some of my hobbies include playing piano and guitar, pyrography (wood burning), snowboarding, playing retro video games, going to Seattle Mariners games, and making pizzas.
               </p>
               <p>
-                Dictum magnis risus phasellus vitae quam morbi. Quis lorem lorem arcu, metus, egestas netus cursus. In.
+                Here are a few technologies I've been working with recently:
               </p>
-              <ul>
-                <li>Quis elit egestas venenatis mattis dignissim.</li>
-                <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-                <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
-              </ul>
-              <p>
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet
-                velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus
-                egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.
-              </p>
-              <h3>How we helped</h3>
-              <p>
-                Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam.
-                Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa,
-                lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.
-              </p>
-              <p>
-                Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique
-                pellentesque. Blandit amet, sed aenean erat arcu morbi.
-              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <ul>
+                    <li>React</li>
+                    <li>Tailwind CSS</li>
+                    <li>Wordpress</li>
+                </ul>
+                <ul>
+                    <li>Figma</li>
+                    <li>Javascript</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
