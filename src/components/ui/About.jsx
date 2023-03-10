@@ -58,16 +58,14 @@ export default function About() {
           <div className="mt-8 lg:mt-0">
             <div className="mx-auto text-base lg:max-w-none">
               <Para>
-              Hello! My name is James Dobbe and I enjoy building websites and designing for new and growing businesses. My intrest in front end web development is fueled by a mix of artistic and logical path that gets enjoyment from building both interesting and beautiful pages and components.               </Para>
+              Hello! My name is James Dobbe, and I enjoy building websites and designing for new and growing businesses. My interest in front-end web development is fueled by a mix of artistic and logical perspectives that get enjoyment from building both interesting and engaging pages and components.              </Para>
             </div>
             <div className="prose prose-indigo mt-5 text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
               <Para>
-                I've worked for a Large Cryto firm helping to build and implement a complete redesign of a handful of applications for actuive users, including an NFT marketplace, and a Voting/Ballot monitoring app.              </Para>
-              <Para>
-                I have also worked with businesses to build modern websites that are designed to help drive more traffic and engage their users.
+              I've worked for a large crypto firm, helping to build and implement a complete redesign of a handful of applications for active users. Projects include an NFT marketplace and a voting/ballot monitoring app.            
               </Para>
               <Para>
-                Here are a few technologies I've been working with recently:
+              I have also worked with businesses to build modern websites that are designed to help drive more traffic and engage their users.
               </Para>
               <div class="grid grid-cols-2 gap-4">
                 <ul>
