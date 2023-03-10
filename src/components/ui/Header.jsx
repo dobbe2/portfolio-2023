@@ -64,73 +64,21 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex md:flex-1 md:items-center md:justify-end">
          <Popover.Group as="nav" className="flex space-x-10">
-            {/*  <Popover className="relative"> */}
-              {/* {({ open }) => ( */}
                 <>
                 <NavLink href="#" label="About" />
-                  {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              About
-            </a> */}
-                    {/* <ChevronDownIcon
-                      className={classNames(
-                        open ? 'text-gray-600' : 'text-gray-400',
-                        'ml-2 h-5 w-5 group-hover:text-gray-500'
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button> */}
-
-                 
                 </>
-              {/* )} */}
-            {/* </Popover> */}
             <NavLink href="#" label="Experience" />
-            {/* <a href="#" className="text-base font-medium text-mercury hover:text-dusty-gray">
-              Experience
-            </a> */}
             <NavLink href="#" label="Work" />
-            {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Work
-            </a> */}
-
             <Popover className="relative">
               {({ open }) => (
                 <>
-                  {/* <Popover.Button
-                    className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-                    )}
-                  > */}
                   <NavLink href="#" label="Contact" />
-                  {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Contact
-            </a> */}
-                    {/* <ChevronDownIcon
-                      className={classNames(
-                        open ? 'text-gray-600' : 'text-gray-400',
-                        'ml-2 h-5 w-5 group-hover:text-gray-500'
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button> */}
-
-                  
                 </>
               )}
             </Popover>
           </Popover.Group>
           <div className="flex items-center md:ml-12">
-            {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Sign in
-            </a> */}
             <Button label="Resume" className="text-base" />
-            {/* <a
-              href="#"
-              className="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-            >
-              Resume
-            </a> */}
           </div>
         </div>
       </div>
@@ -180,44 +128,6 @@ export default function Navbar() {
                 </nav>
               </div>
             </div>
-            {/* <div className="py-6 px-5">
-              <div className="grid grid-cols-2 gap-4">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
-                </a>
-
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
-                </a>
-
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Enterprise
-                </a>
-                {resources.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <div className="mt-6">
-                <a
-                  href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
-                  </a>
-                </p>
-              </div>
-            </div> */}
           </div>
         </Popover.Panel>
       </Transition>
