@@ -48,10 +48,10 @@ export default function About() {
                     height={1376}
                   />
                 </div></div>
-                {/* <figcaption className="mt-3 flex text-sm text-gray-500">
-                  <CameraIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                  <span className="ml-2">Photograph by Marcus O’Leary</span>
-                </figcaption> */}
+                <figcaption className="mt-3 flex text-sm text-gray-500">
+                  {/* <CameraIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" /> */}
+                  <span className="ml-2">My daughter and I having too much fun</span>
+                </figcaption>
               </figure>
             </div>
           </div>
