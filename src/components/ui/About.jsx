@@ -1,16 +1,14 @@
 import Me from "../../assets/images/me.jpg";
 import Para from "../Para";
+import Heading from "../Heading";
+import SectionContainer from "../Section-Container";
 
 export default function About() {
   return (
-    <div className="overflow-hidden bg-white">
-      <div className="relative w-full py-16 px-6 md:px-24 md:p-24 ">
+    <SectionContainer>
         <div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-gray-50 lg:block" />
         <div className="mx-auto text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
-          <div>
-            {/* <h2 className="text-lg font-semibold text-indigo-600">About Me</h2> */}
-            <h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-indigo-600 sm:text-4xl">About Me</h3>
-          </div>
+          <Heading title="About Me" />
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:col-start-2 lg:row-start-1">
@@ -81,7 +79,6 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+    </SectionContainer>
   )
 }
