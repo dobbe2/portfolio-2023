@@ -31,7 +31,7 @@ export default function About() {
                   height={20}
                   patternUnits="userSpaceOnUse"
                 >
-                  <rect x={0} y={0} width={4} height={4} className="text-heliotrope" fill="currentColor" />
+                  <rect x={0} y={0} width={4} height={4} className="text-christale" fill="currentColor" />
                 </pattern>
               </defs>
               <rect width={404} height={384} fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
