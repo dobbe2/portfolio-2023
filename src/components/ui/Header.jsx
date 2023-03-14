@@ -12,6 +12,7 @@ import {
 import NavLink from '../Nav-Link';
 import Button from '../Button';
 import LogoViking from '../../assets/images/LogoViking.svg';
+import HoverLogo from '../../assets/images/hoverLogo.svg';
 
 const solutions = [
   {
