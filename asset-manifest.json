@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio-2023/static/css/main.72468556.css",
+    "main.js": "/portfolio-2023/static/js/main.f8491512.js",
+    "static/js/787.ef0c4325.chunk.js": "/portfolio-2023/static/js/787.ef0c4325.chunk.js",
+    "static/media/me.jpg": "/portfolio-2023/static/media/me.eb6d264fbc079e909d81.jpg",
+    "static/media/LogoViking.svg": "/portfolio-2023/static/media/LogoViking.ae7ca83d67cbd6f500ace16868eda02f.svg",
+    "index.html": "/portfolio-2023/index.html",
+    "main.72468556.css.map": "/portfolio-2023/static/css/main.72468556.css.map",
+    "main.f8491512.js.map": "/portfolio-2023/static/js/main.f8491512.js.map",
+    "787.ef0c4325.chunk.js.map": "/portfolio-2023/static/js/787.ef0c4325.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72468556.css",
+    "static/js/main.f8491512.js"
+  ]
+}
