@@ -7,15 +7,15 @@ export default function Experience() {
     <SectionContainer>
         <Heading title="Where I've Worked" />
         {/* <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p> */}
-      <div className= "px-4 py-5 sm:px-6">
+      {/* <div className= "px-4 py-5 sm:px-6"> */}
         <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">Title</dt>
             <dd className="mt-1 text-sm text-gray-900">Freelance Web Developer</dd>
           </div>
           <div className="sm:col-span-1">
-            <dt className="text-sm font-medium text-gray-500">Application for</dt>
-            <dd className="mt-1 text-sm text-gray-900">Backend Developer</dd>
+            <dt className="text-sm font-medium text-gray-500">Duties</dt>
+            <dd className="mt-1 text-sm text-gray-900">Design and Develop for Businesses</dd>
           </div>
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">Email address</dt>
@@ -23,7 +23,7 @@ export default function Experience() {
           </div>
           <div className="sm:col-span-1">
             <dt className="text-sm font-medium text-gray-500">Salary expectation</dt>
-            <dd className="mt-1 text-sm text-gray-900">$120,000</dd>
+            <dd className="mt-1 text-sm text-gray-900">$120,000,000</dd>
           </div>
           <div className="sm:col-span-2">
             <dt className="text-sm font-medium text-gray-500">About</dt>
@@ -63,7 +63,7 @@ export default function Experience() {
             </dd>
           </div>
         </dl>
-      </div>
+      {/* </div> */}
       </SectionContainer>
   )
 }
