@@ -11,8 +11,7 @@ import {
 } from '@heroicons/react/24/outline'
 import NavLink from '../Nav-Link';
 import Button from '../Button';
-import LogoViking from '../../assets/images/LogoViking.svg';
-import HoverLogo from '../../assets/images/hoverLogo.svg';
+import Logo from '../Logo';
 
 
 //scroll function
@@ -76,17 +75,13 @@ export default function Navbar() {
   const scrollDirection = useScrollDirection();
 
   return (
-    <header className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} top-0 z-50 h-24 transition-all duration-500`}>
+    <header className={`sticky ${ scrollDirection === "down" ? "-top-full" : "top-0"} top-0 z-50 h-24 transition-all duration-1000`}>
     <Popover id="nav-bar" className="relative bg-purple-heart opacity-95">
       <div className="flex items-center justify-between p-6 md:justify-start md:space-x-10">
         <div>
           <a href="#" className="flex">
             <span className="sr-only">James Dobbe Portfolio</span>
-            <img
-              className="h-8 w-auto sm:h-10"
-              src={LogoViking}
-              alt=""
-            />
+            <Logo />
           </a>
         </div>
         <div className="-my-2 -mr-2 md:hidden">
@@ -130,11 +125,7 @@ export default function Navbar() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src={LogoViking}
-                    alt="Your Company"
-                  />
+                  <Logo />
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-purple-heart p-2 text-viking hover:bg-indigo-500 outline:none ">
