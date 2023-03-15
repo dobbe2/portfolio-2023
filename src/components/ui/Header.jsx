@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   ArrowPathIcon,
@@ -14,6 +14,31 @@ import Button from '../Button';
 import LogoViking from '../../assets/images/LogoViking.svg';
 import HoverLogo from '../../assets/images/hoverLogo.svg';
 
+
+//scroll function
+function useScrollDirection() {
+  const [scrollDirection, setScrollDirection] = useState(null);
+
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      const direction = scrollY > lastScrollY ? "down" : "up";
+      if (direction !== scrollDirection && (scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)) {
+        setScrollDirection(direction);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+    };
+    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScrollDirection); // clean up
+    }
+  }, [scrollDirection]);
+
+  return scrollDirection;
+};
+
 const solutions = [
   {
     name: 'About',
@@ -27,7 +52,11 @@ const solutions = [
     href: '#',
     icon: CursorArrowRaysIcon,
   },
-  { name: 'Work', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  { name: 'Work',
+    description: "Your customers' data will be safe and secure.", 
+    href: '#', 
+    icon: ShieldCheckIcon 
+  },
   {
     name: 'Contact',
     description: "Connect with third-party tools that you're already using.",
@@ -43,8 +72,11 @@ const solutions = [
 ]
 
 export default function Navbar() {
+
+  const scrollDirection = useScrollDirection();
+
   return (
-    <header className="sticky top-0 z-50">
+    <header className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} top-0 z-50 h-24 transition-all duration-500`}>
     <Popover id="nav-bar" className="relative bg-purple-heart opacity-95">
       <div className="flex items-center justify-between p-6 md:justify-start md:space-x-10">
         <div>
