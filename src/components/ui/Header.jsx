@@ -1,12 +1,12 @@
 import { Fragment, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
+  UserCircleIcon,
+  CodeBracketSquareIcon,
+  PuzzlePieceIcon,
   Bars3Icon,
-  ChartBarIcon,
-  CursorArrowRaysIcon,
-  ShieldCheckIcon,
-  Squares2X2Icon,
+  DevicePhoneMobileIcon,
+  DocumentCheckIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import NavLink from '../Nav-Link';
@@ -41,32 +41,32 @@ function useScrollDirection() {
 const solutions = [
   {
     name: 'About',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    description: 'A summary of myself, professionally and personally.',
     href: '#',
-    icon: ChartBarIcon,
+    icon: UserCircleIcon,
   },
   {
     name: 'Experience',
     description: 'Speak directly to your customers in a more meaningful way.',
     href: '#',
-    icon: CursorArrowRaysIcon,
+    icon: CodeBracketSquareIcon,
   },
   { name: 'Work',
     description: "Your customers' data will be safe and secure.", 
     href: '#', 
-    icon: ShieldCheckIcon 
+    icon: PuzzlePieceIcon, 
   },
   {
     name: 'Contact',
     description: "Connect with third-party tools that you're already using.",
     href: '#',
-    icon: Squares2X2Icon,
+    icon: DevicePhoneMobileIcon,
   },
   {
     name: 'Resume',
     description: 'Build strategic funnels that will drive your customers to convert',
     href: '#',
-    icon: ArrowPathIcon,
+    icon: DocumentCheckIcon,
   },
 ]
 
