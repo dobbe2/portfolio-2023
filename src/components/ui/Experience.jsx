@@ -1,69 +1,58 @@
 import { PaperClipIcon } from '@heroicons/react/20/solid'
 import Heading from '../Heading'
 import SectionContainer from '../Section-Container'
+import Para from '../Para'
 
 export default function Experience() {
   return (
     <SectionContainer>
         <Heading title="Where I've Worked" />
-        {/* <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p> */}
-      {/* <div className= "px-4 py-5 sm:px-6"> */}
-        <dl className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
+      <div className="mt-5 prose text-gray-500 prose-indigo lg:col-start-1 lg:row-start-1 lg:max-w-none">
+        <dl className="grid grid-cols-1 lg:mt-10 gap-x-4 gap-y-0 lg:gap-y-8 sm:grid-cols-2">
           <div className="sm:col-span-1">
-            <dt className="text-sm font-medium text-gray-500">Title</dt>
-            <dd className="mt-1 text-sm text-gray-900">Freelance Web Developer</dd>
+            <Para bold>Title</Para>
+            <Para>Freelance Web Developer</Para>
           </div>
           <div className="sm:col-span-1">
-            <dt className="text-sm font-medium text-gray-500">Duties</dt>
-            <dd className="mt-1 text-sm text-gray-900">Design and Develop for Businesses</dd>
-          </div>
-          <div className="sm:col-span-1">
-            <dt className="text-sm font-medium text-gray-500">Email address</dt>
-            <dd className="mt-1 text-sm text-gray-900">margotfoster@example.com</dd>
-          </div>
-          <div className="sm:col-span-1">
-            <dt className="text-sm font-medium text-gray-500">Salary expectation</dt>
-            <dd className="mt-1 text-sm text-gray-900">$120,000,000</dd>
+            <Para bold>Date</Para>
+            <Para>February 2021 - Present</Para>
           </div>
           <div className="sm:col-span-2">
-            <dt className="text-sm font-medium text-gray-500">About</dt>
-            <dd className="mt-1 text-sm text-gray-900">
-              Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur
-              qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud
-              pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
-            </dd>
-          </div>
-          <div className="sm:col-span-2">
-            <dt className="text-sm font-medium text-gray-500">Attachments</dt>
-            <dd className="mt-1 text-sm text-gray-900">
-              <ul role="list" className="divide-y divide-gray-200 rounded-md border border-gray-200">
-                <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                  <div className="flex w-0 flex-1 items-center">
-                    <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                    <span className="ml-2 w-0 flex-1 truncate">resume_back_end_developer.pdf</span>
-                  </div>
-                  <div className="ml-4 flex-shrink-0">
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      Download
-                    </a>
-                  </div>
-                </li>
-                <li className="flex items-center justify-between py-3 pl-3 pr-4 text-sm">
-                  <div className="flex w-0 flex-1 items-center">
-                    <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                    <span className="ml-2 w-0 flex-1 truncate">coverletter_back_end_developer.pdf</span>
-                  </div>
-                  <div className="ml-4 flex-shrink-0">
-                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                      Download
-                    </a>
-                  </div>
-                </li>
+          <Para bold>What I've Done</Para>
+            <div class="grid lg:gap-4">
+              <ul className='list-disc'>
+                <li>Work with businesses to design and develop websites and branding/logos</li>
+                <li>Assist in developing creative content</li>
+                <li>Work with client to ensure shared vision and expectations</li>
+                <li>Launched multiple websites, setting up domains, hosting, and monitoring/maintenance</li>
               </ul>
-            </dd>
+            </div>
           </div>
         </dl>
-      {/* </div> */}
+        </div>
+        <div className="mt-5 prose text-gray-500 prose-indigo lg:col-start-1 lg:row-start-1 lg:max-w-none">
+        <dl className="grid grid-cols-1 lg:mt-10 gap-x-4 gap-y-8 sm:grid-cols-2">
+          <div className="sm:col-span-1">
+            <Para bold>Title</Para>
+            <Para>Front End Developer @ ZAP Protocol</Para>
+          </div>
+          <div className="sm:col-span-1">
+            <Para bold>Date</Para>
+            <Para>October 2021 - April 2022</Para>
+          </div>
+          <div className="sm:col-span-2">
+            <Para bold>What I've Done</Para>
+            <div class="grid lg:gap-4">
+              <ul className='list-disc'>
+                <li>Used design tools such as Figma and Storybook to create reusable components for the entire application and to build and test all components</li>
+                <li>Worked alongside design team through handoffs and bridges. Collaborated daily with front-end and design teams to keep progress pushing forward and give and receive feedback on current tasks</li>
+                <li>Received and reviewed changes to the Design System and created tickets to assign to developers</li>
+                <li>Performed bug testing and QA before version releases and made changes quickly and precisely</li>
+              </ul>
+            </div>
+          </div>
+        </dl>
+        </div>
       </SectionContainer>
   )
 }
