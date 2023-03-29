@@ -33,7 +33,13 @@ const features = [
         description: 'Developed a visual representation of a baseball scoreboard.  Programmed the many conditional situations that occur during a ball and strike count, and the runners on the basepaths. Focused on heavy game logic.',
         imageSrc: baseball,
         imageAlt: 'Picture of the baseball game app with a game in progress.',
-    }
+    },
+    {
+        name: 'Anagram Checker',
+        description: 'A project created to check if two sets of letters or words are anagrams of each other.',
+        imageSrc: anagram,
+        imageAlt: 'Picture of the anagram app.',
+    },
   ]
   
   function classNames(...classes) {
@@ -41,18 +47,10 @@ const features = [
   }
   
   export default function Example() {
-    // const toollist = features.map((tools, index) => <li key={index}>{tools}</li>)
     return (
       <div className="bg-white">
         <SectionContainer>
-          {/* <div className="max-w-3xl mx-auto text-center"> */}
             <Heading title="Some Things I’ve Built" />
-            {/* <Para className="mt-4">
-              As a digital creative, your laptop or tablet is at the center of your work. Keep your device safe with a
-              fabric sleeve that matches in quality and looks.
-            </Para> */}
-          {/* </div> */}
-  
           <div className="mt-16 space-y-16">
             {features.map((feature, featureIdx) => (
               <div
@@ -61,8 +59,8 @@ const features = [
               >
                 <div
                   className={classNames(
-                    featureIdx % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-8 xl:col-start-9',
-                    'mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4'
+                    featureIdx % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-6 xl:col-start-7',
+                    'mt-6 lg:col-span-7 lg:row-start-1 lg:mt-0 xl:col-span-6'
                   )}
                 >
                   <Para bold className="hover:text-viking">{feature.name}</Para>
@@ -74,8 +72,8 @@ const features = [
                 </div>
                 <div
                   className={classNames(
-                    featureIdx % 2 === 0 ? 'lg:col-start-6 xl:col-start-5' : 'lg:col-start-1',
-                    'flex-auto lg:col-span-7 lg:row-start-1 xl:col-span-8'
+                    featureIdx % 2 === 0 ? 'lg:col-start-8 xl:col-start-7' : 'lg:col-start-1',
+                    'flex-auto lg:col-span-5 lg:row-start-1 xl:col-span-6'
                   )}
                 >
                   <div className="overflow-hidden bg-gray-100 rounded-lg shadow-lg aspect-w-5 aspect-h-5">
