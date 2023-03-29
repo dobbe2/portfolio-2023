@@ -19,7 +19,7 @@ export default function Experience() {
           </div>
           <div className="sm:col-span-2">
           <Para bold>What I've Done</Para>
-            <div class="grid lg:gap-4">
+            <div className="grid lg:gap-4">
               <ul className='list-disc'>
                 <li>Work with businesses to design and develop websites and branding/logos</li>
                 <li>Assist in developing creative content</li>
@@ -42,7 +42,7 @@ export default function Experience() {
           </div>
           <div className="sm:col-span-2">
             <Para bold>What I've Done</Para>
-            <div class="grid lg:gap-4">
+            <div className="grid lg:gap-4">
               <ul className='list-disc'>
                 <li>Used design tools such as Figma and Storybook to create reusable components for the entire application and to build and test all components</li>
                 <li>Worked alongside design team through handoffs and bridges. Collaborated daily with front-end and design teams to keep progress pushing forward and give and receive feedback on current tasks</li>

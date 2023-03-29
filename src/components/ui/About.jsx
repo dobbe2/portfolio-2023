@@ -47,7 +47,7 @@ export default function About() {
           </svg>
           <div className="relative mx-auto text-base lg:max-w-none">
             <figure>
-              <div class="filter grayscale-[50%] hover:filter-none hover:contrast-200 hover:duration-150 duration-150 ease-in-out">
+              <div className="filter grayscale-[50%] hover:filter-none hover:contrast-200 hover:duration-150 duration-150 ease-in-out">
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                   <img
                     className="object-cover object-center rounded-lg shadow-lg lg:max-w-md"
@@ -91,7 +91,7 @@ export default function About() {
             <Para>
               Here are a few technologies I’ve been working with recently:
             </Para>
-            <div class="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4">
               <ul>
                 <li>React</li>
                 <li>Tailwind CSS</li>

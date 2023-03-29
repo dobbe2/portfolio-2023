@@ -4,10 +4,10 @@ export default function NavLink({ href, label }) {
   return (
     <a
       href={href}
-      className="group text-base font-medium text-mercury transition hover:text-viking duration-300"
+      className="text-base font-medium transition duration-300 group text-mercury hover:text-viking"
     >
       {label}
-      <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-viking"></span>
+      <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-viking"></span>
     </a>
   );
 }
