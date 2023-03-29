@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {colors: {
       'purple-heart': '#5f22d9',
-      'viking': '#51d6ca',
-      'viking-tint': '#51d6ca4c',
+      'viking': '#01ffd3',
+      'viking-tint': '#01ffd34c',
       'dusty-gray': '#9c9c9c',
       'mercury': '#e4e4e4',
       'galliano': '#d7ad0d',
