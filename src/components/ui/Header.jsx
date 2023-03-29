@@ -92,9 +92,9 @@ export default function Navbar() {
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center rounded-md bg-purple-heart p-2 text-viking hover:bg-indigo-500 outline:none">
+            <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md bg-purple-heart text-viking hover:bg-indigo-500 outline:none">
               <span className="sr-only">Open menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <div className="hidden md:flex md:flex-1 md:items-center md:justify-end">
@@ -129,18 +129,18 @@ export default function Navbar() {
         >
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden bg-purple-heart"
+            className="absolute inset-x-0 top-0 p-2 transition origin-top-right transform md:hidden bg-purple-heart"
           >
-            <div className="divide-y-2 divide-gray-50 rounded-lg bg-purple-heart shadow-lg ring-1 ring-black ring-opacity-5">
+            <div className="divide-y-2 rounded-lg shadow-lg divide-gray-50 bg-purple-heart ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
                     <Logo />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-purple-heart p-2 text-viking hover:bg-indigo-500 outline:none ">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md bg-purple-heart text-viking hover:bg-indigo-500 outline:none ">
                       <span className="sr-only">Close menu</span>
-                      <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon className="w-6 h-6" aria-hidden="true" />
                     </Popover.Button>
                   </div>
                 </div>
@@ -150,14 +150,14 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="group -m-3 flex items-center rounded-lg p-3"
+                        className="flex items-center p-3 -m-3 rounded-lg group"
                       >
-                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md  text-viking">
-                          <item.icon className="h-6 w-6" aria-hidden="true" />
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 rounded-md text-viking">
+                          <item.icon className="w-6 h-6" aria-hidden="true" />
                         </div>
-                        <div className="ml-4 text-base font-medium text-viking transition duration-300">
+                        <div className="ml-4 text-base font-medium transition duration-300 text-viking">
                           {item.name}
-                          <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-viking"></span>
+                          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-viking"></span>
                         </div>
                       </a>
                     ))}
