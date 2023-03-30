@@ -1,5 +1,10 @@
 import React from "react";
 
-export default function Para({ bold, className, children }) {
-  return <p className={bold ? `text-lg text-gray-500 font-bold ${className}` : `text-lg text-gray-500 ${className}`}>{children}</p>;
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+
+export default function Para({ dark, className, children }) {
+  return <p className= {classNames( dark ? 'text-mercury' : 'text-gray-500' , `text-lg ${className}`)}>{ children }</p>;
 }
