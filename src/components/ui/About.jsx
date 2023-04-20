@@ -5,7 +5,7 @@ import SectionContainer from "../Section-Container";
 
 export default function About() {
   return (
-    <SectionContainer>
+    <SectionContainer id="about">
       <div className="absolute top-0 bottom-0 hidden w-screen left-3/4 bg-gray-50 lg:block" />
       <div className="mx-auto text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
         <Heading title="About Me" />

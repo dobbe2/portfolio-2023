@@ -59,7 +59,7 @@ const features = [
   export default function Example() {
     return (
       <div className="bg-white">
-        <SectionContainer>
+        <SectionContainer id="work">
             <Heading title="Some Things I’ve Built" />
           <div className="mt-16 space-y-16">
             {features.map((feature, featureIdx) => (

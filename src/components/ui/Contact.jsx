@@ -12,7 +12,7 @@ export default function Contact() {
   const [state, handleSubmit] = useForm("mrgvrzjp");
 
   return (
-    <SectionContainer className="bg-purple-heart">
+    <SectionContainer className="bg-purple-heart" id="contact">
     <Heading dark title="Contact Me" />
       <div className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-3">
         <div className="px-4 py-4 sm:px-0">
@@ -69,7 +69,7 @@ export default function Contact() {
               type="submit"
               disabled={state.submitting}
               label={"Send"}
-              className="bg-purple-heart"
+              className="bg-purple-heart hover:bg-viking-tint"
             >
               Send
             </Button>

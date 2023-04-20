@@ -7,7 +7,7 @@ import ListItem from '../ListItem'
 
 export default function Experience() {
   return (
-    <SectionContainer className="bg-purple-heart">
+    <SectionContainer className="bg-purple-heart" id="experience">
         <Heading dark title="Where I've Worked" />
       <div className="mt-5 prose text-gray-500 prose-indigo lg:col-start-1 lg:row-start-1 lg:max-w-none">
         <dl className="grid grid-cols-1 lg:mt-10 gap-x-4 gap-y-0 lg:gap-y-8 sm:grid-cols-2">

@@ -12,6 +12,7 @@ import {
 import NavLink from "../Nav-Link";
 import Button from "../Button";
 import Logo from "../Logo";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 //scroll function
 function useScrollDirection() {
@@ -44,32 +45,32 @@ const solutions = [
   {
     name: "About",
     description: "A summary of myself, professionally and personally.",
-    href: "#",
+    href: "#about",
     icon: UserCircleIcon,
   },
   {
     name: "Experience",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
+    href: "#experience",
     icon: CodeBracketSquareIcon,
   },
   {
     name: "Work",
     description: "Your customers' data will be safe and secure.",
-    href: "#",
+    href: "#work",
     icon: PuzzlePieceIcon,
   },
   {
     name: "Contact",
     description: "Connect with third-party tools that you're already using.",
-    href: "#",
+    href: "#contact",
     icon: DevicePhoneMobileIcon,
   },
   {
     name: "Resume",
     description:
       "Build strategic funnels that will drive your customers to convert",
-    href: "#",
+    href: "#resume",
     icon: DocumentCheckIcon,
   },
 ];
@@ -100,14 +101,14 @@ export default function Navbar() {
           <div className="hidden md:flex md:flex-1 md:items-center md:justify-end">
             <Popover.Group as="nav" className="flex space-x-10">
               <>
-                <NavLink href="#" label="About" />
+                <NavLink href='#about' label="About" />
               </>
-              <NavLink href="#" label="Experience" />
-              <NavLink href="#" label="Work" />
+              <NavLink href="#experience" label="Experience" />
+              <NavLink href="#work" label="Work" />
               <Popover className="relative">
                 {({ open }) => (
                   <>
-                    <NavLink href="#" label="Contact" />
+                    <NavLink href="#contact" label="Contact" />
                   </>
                 )}
               </Popover>
@@ -147,7 +148,7 @@ export default function Navbar() {
                 <div className="mt-6">
                   <nav className="grid gap-6">
                     {solutions.map((item) => (
-                      <a
+                      <AnchorLink
                         key={item.name}
                         href={item.href}
                         className="flex items-center p-3 -m-3 rounded-lg group"
@@ -159,7 +160,7 @@ export default function Navbar() {
                           {item.name}
                           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-viking"></span>
                         </div>
-                      </a>
+                      </AnchorLink>
                     ))}
                   </nav>
                 </div>
