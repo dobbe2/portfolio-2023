@@ -6,6 +6,7 @@ import About from "./components/ui/About.jsx";
 import Experience from './components/ui/Experience';
 import Creations from './components/ui/Creations';
 import EasterEgg from './components/ui/EasterEgg';
+import Contact from './components/ui/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Experience />
       <Creations />
       <EasterEgg />
+      <Contact />
     </div>
   );
 }
