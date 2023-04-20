@@ -23,7 +23,7 @@ const features = [
       description: 'Built a WordPress website for a construction company to showcase projects and drive business with an elegant and modern responsive design. ',
       imageSrc: lbc,
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
-      tools: 'Tools',
+      tools: 'WordPress HTML CSS',
       href: 'https://leebrannamconstruction.com'
     },
     {
@@ -31,7 +31,7 @@ const features = [
         description: 'Remotely worked with developers and designers from around the world, contributing to the redesign of a large application containing an NFT marketplace, Oracles Price Feeds, and other Exchanges. Designed with mobile development as top priority.  Project can be found at https://app.zap.org/nft (requires digital wallet to view all content). ',
         imageSrc: nft,
         imageAlt: 'Frontpage layout of the ZAP Protocol NFT Marketplace',
-        tools: 'Tools',
+        tools: 'React Typescript Figma Storybook',
         href: 'https://app.zap.org/nft'
     },
     {
@@ -39,7 +39,7 @@ const features = [
         description: 'Developed a visual representation of a baseball scoreboard.  Programmed the many conditional situations that occur during a ball and strike count, and the runners on the basepaths. Focused on heavy game logic.',
         imageSrc: baseball,
         imageAlt: 'Picture of the baseball game app with a game in progress.',
-        tools: 'Tools',
+        tools: 'HTML CSS Javascript jQuery',
         href: 'https://github.com/dobbe2/baseballScoreboard'
     },
     {
@@ -47,7 +47,7 @@ const features = [
         description: 'A project created to check if two sets of letters or words are anagrams of each other.',
         imageSrc: anagram,
         imageAlt: 'Picture of the anagram app.',
-        tools: 'Tools',
+        tools: 'HTML CSS Javascript',
         href: 'https://dobbe2.github.io/anagram',
     },
   ]
