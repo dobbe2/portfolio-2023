@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-2023/static/css/main.c337b654.css",
-    "main.js": "/portfolio-2023/static/js/main.5d5ee0a7.js",
+    "main.css": "/portfolio-2023/static/css/main.91e18699.css",
+    "main.js": "/portfolio-2023/static/js/main.127af861.js",
     "static/js/787.ef0c4325.chunk.js": "/portfolio-2023/static/js/787.ef0c4325.chunk.js",
     "static/media/LBC1.png": "/portfolio-2023/static/media/LBC1.3414b1b0820d5b7d4e45.png",
     "static/media/baseballApp.png": "/portfolio-2023/static/media/baseballApp.0ca2d791a7c174e4b480.png",
@@ -12,12 +12,12 @@
     "static/media/hoverLogo.svg": "/portfolio-2023/static/media/hoverLogo.a9cfe9b2ecf2da52b05fda99854d0c4e.svg",
     "static/media/LogoViking.svg": "/portfolio-2023/static/media/LogoViking.ae7ca83d67cbd6f500ace16868eda02f.svg",
     "index.html": "/portfolio-2023/index.html",
-    "main.c337b654.css.map": "/portfolio-2023/static/css/main.c337b654.css.map",
-    "main.5d5ee0a7.js.map": "/portfolio-2023/static/js/main.5d5ee0a7.js.map",
+    "main.91e18699.css.map": "/portfolio-2023/static/css/main.91e18699.css.map",
+    "main.127af861.js.map": "/portfolio-2023/static/js/main.127af861.js.map",
     "787.ef0c4325.chunk.js.map": "/portfolio-2023/static/js/787.ef0c4325.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c337b654.css",
-    "static/js/main.5d5ee0a7.js"
+    "static/css/main.91e18699.css",
+    "static/js/main.127af861.js"
   ]
 }
