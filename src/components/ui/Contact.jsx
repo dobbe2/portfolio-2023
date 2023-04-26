@@ -74,7 +74,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-end px-4 py-4 border-t gap-x-6 border-gray-900/10 sm:px-8">
+          <div className="flex items-center justify-between px-4 py-4 border-t gap-x-6 border-gray-900/10 sm:px-8">
+          <div className='flex gap-4'>
             <a target="_blank" rel="noreferrer" href="https://github.com/dobbe2/">
                 <FaGithub size={42} color="#5f22d9" />
             </a>
@@ -84,6 +85,9 @@ export default function Contact() {
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/james-dobbe/">
                 <FaLinkedin size={42} color="#5f22d9"/>
             </a>
+
+          </div>
+        <div>
           { state.succeeded ? 
             <Button
               type="submit"
@@ -99,7 +103,7 @@ export default function Contact() {
             >
               Send
             </Button>
-          }
+          }</div>
           </div>
         </form>
       </div>
