@@ -7,6 +7,7 @@ import Heading from '../Heading';
 import Button from '../Button';
 import Title from '../Title';
 import { useForm } from '@formspree/react';
+import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa"
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mrgvrzjp");
@@ -40,6 +41,22 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
+              <div className="sm:col-span-4">
+                <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
+                  <Title>Email Address</Title>
+                </label>
+                <div className="mt-2">
+                  <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      className="block flex-1 border-0 bg-transparent py-1.5 pl-2 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                      placeholder="email@mail.com"
+                    />
+                  </div>
+                </div>
+              </div>
 
               <div className="col-span-full">
                 <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
@@ -58,6 +75,15 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex items-center justify-end px-4 py-4 border-t gap-x-6 border-gray-900/10 sm:px-8">
+            <a target="_blank" rel="noreferrer" href="https://github.com/dobbe2/">
+                <FaGithub size={42} color="#5f22d9" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://discordapp.com/users/617153060338401302">
+                <FaDiscord size={42} color="#5f22d9"/>
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/james-dobbe/">
+                <FaLinkedin size={42} color="#5f22d9"/>
+            </a>
           { state.succeeded ? 
             <Button
               type="submit"
