@@ -41,7 +41,7 @@ function useScrollDirection() {
   return scrollDirection;
 }
 
-const solutions = [
+const destinations = [
   {
     name: "About",
     description: "A summary of myself, professionally and personally.",
@@ -82,7 +82,7 @@ export default function Navbar() {
     <header
       className={`sticky ${
         scrollDirection === "down" ? "-top-full" : "top-0"
-      } top-0 z-50 h-24 transition-all duration-1000`}
+      } top-0 z-50 h-24 transition-all duration-700`}
     >
       <Popover id="nav-bar" className="relative bg-purple-heart opacity-95">
         <div className="flex items-center justify-between p-6 md:justify-start md:space-x-10">
@@ -147,7 +147,7 @@ export default function Navbar() {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-6">
-                    {solutions.map((item) => (
+                    {destinations.map((item) => (
                       <AnchorLink
                         key={item.name}
                         href={item.href}
