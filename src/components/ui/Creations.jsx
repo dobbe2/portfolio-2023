@@ -7,6 +7,8 @@ import baseball from "../../assets/images/baseballApp.png";
 import lbc from "../../assets/images/LBC1.png";
 import nft from "../../assets/images/MainNFT.jpg";
 import walkeasy from "../../assets/images/walkEasy1.png";
+import { FiExternalLink } from "react-icons/fi"
+import { FaGithub } from "react-icons/fa"
 
 
 const features = [
@@ -32,7 +34,8 @@ const features = [
         imageSrc: nft,
         imageAlt: 'Frontpage layout of the ZAP Protocol NFT Marketplace',
         tools: 'React Typescript Figma Storybook',
-        href: 'https://app.zap.org/nft'
+        href: 'https://app.zap.org/nft',
+
     },
     {
         name: 'Interactive Baseball Scoreboard',
@@ -40,7 +43,8 @@ const features = [
         imageSrc: baseball,
         imageAlt: 'Picture of the baseball game app with a game in progress.',
         tools: 'HTML CSS Javascript jQuery',
-        href: 'https://github.com/dobbe2/baseballScoreboard'
+        href: 'https://github.com/dobbe2/baseballScoreboard',
+        github: 'https://github.com/dobbe2/baseballScoreboard',
     },
     {
         name: 'Anagram Checker',
@@ -49,6 +53,7 @@ const features = [
         imageAlt: 'Picture of the anagram app.',
         tools: 'HTML CSS Javascript',
         href: 'https://dobbe2.github.io/anagram',
+        github: 'https://github.com/dobbe2/anagram',
     },
   ]
   
@@ -82,6 +87,17 @@ const features = [
                     <Para bold>
                         {feature.tools}
                     </Para>
+                    <div className="flex gap-2 mt-2">
+                    { feature.github ? 
+                    <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.github}>
+                        <FaGithub size={25} color="#5f22d9" />
+                      </a>
+                      : 
+                      <></>}
+                      <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.href}>
+                        <FiExternalLink size={25} color="#5f22d9" />
+                      </a>
+                    </div>
                 </div>
                 <div
                   className={classNames(
