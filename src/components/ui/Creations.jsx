@@ -1,6 +1,8 @@
 import Heading from "../Heading";
 import Para from "../Para";
 import Title from "../Title";
+import ShineOuter from "../ShineOuter";
+import Shine from "../Shine";
 import SectionContainer from "../Section-Container";
 import anagram from "../../assets/images/anagram.png";
 import baseball from "../../assets/images/baseballApp.png";
@@ -89,14 +91,20 @@ const features = [
                     </Para>
                     <div className="flex gap-2 mt-2">
                     { feature.github ? 
+                    <ShineOuter>
                     <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.github}>
                         <FaGithub size={25} color="#5f22d9" />
+                        <Shine />
                       </a>
+                      </ShineOuter>
                       : 
                       <></>}
+                      <ShineOuter>
                       <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.href}>
                         <FiExternalLink size={25} color="#5f22d9" />
                       </a>
+                      <Shine />
+                      </ShineOuter>
                     </div>
                 </div>
                 <div
