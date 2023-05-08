@@ -6,8 +6,11 @@ import SectionContainer from '../Section-Container';
 import Heading from '../Heading';
 import Button from '../Button';
 import Title from '../Title';
+import Shine from '../Shine';
+import ShineOuter from '../ShineOuter';
 import { useForm } from '@formspree/react';
 import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa"
+
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mrgvrzjp");
@@ -76,16 +79,27 @@ export default function Contact() {
           </div>
           <div className="flex items-center justify-between px-4 py-4 border-t gap-x-6 border-gray-900/10 sm:px-8">
           <div className='flex gap-4'>
-            <a target="_blank" rel="noreferrer" href="https://github.com/dobbe2/">
-                <FaGithub size={42} color="#5f22d9" />
-            </a>
+            <ShineOuter>
+              <a target="_blank" rel="noreferrer" href="https://github.com/dobbe2/">
+                  <FaGithub size={42} color="#5f22d9" />
+                  {/* shine box */}
+              <Shine />
+              </a>
+            </ShineOuter>
+            <ShineOuter>
             <a target="_blank" rel="noreferrer" href="https://discordapp.com/users/617153060338401302">
                 <FaDiscord size={42} color="#5f22d9"/>
+                {/* shine box */}
+            <Shine />
             </a>
+            </ShineOuter>
+            <ShineOuter>
             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/james-dobbe/">
                 <FaLinkedin size={42} color="#5f22d9"/>
+                {/* shine box */}
+            <Shine />
             </a>
-
+        </ShineOuter>
           </div>
         <div>
           { state.succeeded ? 
