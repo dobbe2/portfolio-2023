@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {colors: {
+    extend: {
+      animation: {
+        shine: "shine 1s"
+      },
+      keyframes: {
+        shine: {
+          "100%": {left: "100%"},
+        },
+      },
+      colors: {
       'purple-heart': '#5f22d9',
       'viking': '#01ffd3',
       'viking-tint': '#01ffd34c',
@@ -16,7 +25,8 @@ module.exports = {
       'heliotrope': "#ac73ff",
       'persian-red': '#c82b28',
       'emerald': '#32c563',
-    },},
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
