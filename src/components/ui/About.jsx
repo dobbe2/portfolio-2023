@@ -2,13 +2,16 @@ import Me from "../../assets/images/me.jpg";
 import Para from "../Para";
 import Heading from "../Heading";
 import SectionContainer from "../Section-Container";
+import { Slide, Fade } from "react-awesome-reveal";
 
 export default function About() {
   return (
     <SectionContainer id="about">
       <div className="absolute top-0 bottom-0 hidden w-screen left-3/4 bg-gray-50 lg:block" />
       <div className="mx-auto text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
+      <Slide>
         <Heading title="About Me" />
+      </Slide>
       </div>
       <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
         <div className="relative lg:col-start-2 lg:row-start-1">
@@ -73,7 +76,7 @@ export default function About() {
               Hello! My name is James Dobbe, and I enjoy building websites and
               designing for new and growing businesses. My interest in front-end
               web development is fueled by a mix of artistic and logical
-              perspectives that get enjoyment from building both interesting and
+              perspectives, and I get enjoyment from building both interesting and
               engaging pages and components.{" "}
             </Para>
           </div>
@@ -92,15 +95,20 @@ export default function About() {
               Here are a few technologies I’ve been working with recently:
             </Para>
             <div className="grid grid-cols-2 gap-4">
+              <Fade cascade >
               <ul>
                 <li>React</li>
                 <li>Tailwind CSS</li>
                 <li>Wordpress</li>
               </ul>
+              </Fade>
+              <Fade cascade >
               <ul>
                 <li>Figma</li>
                 <li>Javascript</li>
+                <li>Animations</li>
               </ul>
+              </Fade>
             </div>
           </div>
         </div>
