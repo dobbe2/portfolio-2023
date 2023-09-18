@@ -12,7 +12,7 @@ import walkeasy from "../../assets/images/walkEasy1.png";
 import { FiExternalLink } from "react-icons/fi"
 import { FaGithub } from "react-icons/fa"
 import ListItem from '../ListItem';
-import { Slide, Fade } from "react-awesome-reveal";
+import { Slide, Fade, Zoom } from "react-awesome-reveal";
 
 
 
@@ -124,11 +124,11 @@ const features = [
                     'flex-auto lg:col-span-5 lg:row-start-1 '
                   )}
                 >
-                  <div className="overflow-hidden bg-gray-100 rounded-lg shadow-lg aspect-w-5 aspect-h-5">
+                  <Zoom className="overflow-hidden bg-gray-100 rounded-lg shadow-lg aspect-w-5 aspect-h-5">
                     <a target="_blank" rel="noreferrer" href={feature.href}>
                       <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
                     </a>
-                  </div>
+                  </Zoom>
                 </div>
               </div>
             ))}
