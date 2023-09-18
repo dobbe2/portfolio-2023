@@ -48,7 +48,7 @@ export default function About() {
               fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
             />
           </svg>
-          <div className="relative mx-auto text-base lg:max-w-none">
+          <div left className="relative mx-auto text-base lg:max-w-none">
             <figure>
               <div className="filter grayscale-[50%] hover:filter-none hover:contrast-200 hover:duration-150 duration-150 ease-in-out">
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
@@ -96,14 +96,14 @@ export default function About() {
             </Para>
             <div className="grid grid-cols-2 gap-4">
               <Fade cascade >
-              <ul>
+              <ul className="marker:text-viking">
                 <li>React</li>
                 <li>Tailwind CSS</li>
                 <li>Wordpress</li>
               </ul>
               </Fade>
               <Fade cascade >
-              <ul>
+              <ul className="marker:text-viking">
                 <li>Figma</li>
                 <li>Javascript</li>
                 <li>Animations</li>
