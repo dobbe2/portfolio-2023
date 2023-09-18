@@ -11,6 +11,9 @@ import nft from "../../assets/images/MainNFT.jpg";
 import walkeasy from "../../assets/images/walkEasy1.png";
 import { FiExternalLink } from "react-icons/fi"
 import { FaGithub } from "react-icons/fa"
+import ListItem from '../ListItem';
+import { Slide, Fade } from "react-awesome-reveal";
+
 
 
 const features = [
@@ -19,7 +22,7 @@ const features = [
       description: `Designed and created a company site for a Medical Professional to replace a very slow and poorly designed WordPress site.`,
       imageSrc: walkeasy,
       imageAlt: 'Hero Section of the WalkEasy foot doctor website',
-      tools: `Next.js Tailwind CSS Tailwind UI`,
+      tools: ['Next.js', 'Tailwind CSS', 'Tailwind UI'],
       href: 'http://walk-easy.vercel.app',
     },
     {
@@ -27,7 +30,7 @@ const features = [
       description: 'Built a WordPress website for a construction company to showcase projects and drive business with an elegant and modern responsive design. ',
       imageSrc: lbc,
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
-      tools: 'WordPress HTML CSS',
+      tools: ['WordPress', 'HTML', 'CSS'],
       href: 'https://leebrannamconstruction.com'
     },
     {
@@ -35,7 +38,7 @@ const features = [
         description: 'Remotely worked with developers and designers from around the world, contributing to the redesign of a large application containing an NFT marketplace, Oracles Price Feeds, and other Exchanges. Designed with mobile development as top priority.  Project can be found at https://app.zap.org/nft (requires digital wallet to view all content). ',
         imageSrc: nft,
         imageAlt: 'Frontpage layout of the ZAP Protocol NFT Marketplace',
-        tools: 'React Typescript Figma Storybook',
+        tools: ['React', 'Typescript', 'Figma', 'Styled-Components', 'Storybook'],
         href: 'https://app.zap.org/nft',
 
     },
@@ -44,7 +47,7 @@ const features = [
         description: 'Developed a visual representation of a baseball scoreboard.  Programmed the many conditional situations that occur during a ball and strike count, and the runners on the basepaths. Focused on heavy game logic.',
         imageSrc: baseball,
         imageAlt: 'Picture of the baseball game app with a game in progress.',
-        tools: 'HTML CSS Javascript jQuery',
+        tools: ['HTML', 'CSS', 'Javascript', 'jQuery'],
         href: 'https://github.com/dobbe2/baseballScoreboard',
         github: 'https://github.com/dobbe2/baseballScoreboard',
     },
@@ -53,7 +56,7 @@ const features = [
         description: 'A project created to check if two sets of letters or words are anagrams of each other.',
         imageSrc: anagram,
         imageAlt: 'Picture of the anagram app.',
-        tools: 'HTML CSS Javascript',
+        tools: ['HTML', 'CSS', 'Javascript'],
         href: 'https://dobbe2.github.io/anagram',
         github: 'https://github.com/dobbe2/anagram',
     },
@@ -67,7 +70,9 @@ const features = [
     return (
       <div className="bg-white">
         <SectionContainer id="work">
+        <Slide>
             <Heading title="Some Things I’ve Built" />
+            </Slide>
           <div className="mt-16 space-y-16">
             {features.map((feature, featureIdx) => (
               <div
@@ -86,9 +91,15 @@ const features = [
                   </a>
                   <Para className="mt-2">{feature.description}</Para>
                   <Para bold className="mt-2">Technologies Used</Para>
-                    <Para bold>
-                        {feature.tools}
-                    </Para>
+                  <Fade cascade duration={500}>
+                    <ul className="ml-5 text-lg list-disc marker:text-viking">{
+                      feature.tools.map((tool, index) => {             
+                        return(<ListItem key={index} item={tool}>
+                        </ListItem>)
+                      })
+                    }
+                    </ul>
+                    </Fade>
                     <div className="flex gap-2 mt-2">
                     { feature.github ? 
                     <ShineOuter>
