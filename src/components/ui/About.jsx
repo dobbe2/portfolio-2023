@@ -9,7 +9,7 @@ export default function About() {
     <SectionContainer id="about">
       <div className="absolute top-0 bottom-0 hidden w-screen left-3/4 bg-gray-50 lg:block" />
       <div className="mx-auto text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
-      <Slide>
+      <Slide triggerOnce>
         <Heading title="About Me" />
       </Slide>
       </div>
@@ -95,14 +95,14 @@ export default function About() {
               Here are a few technologies I’ve been working with recently:
             </Para>
             <div className="grid grid-cols-2 gap-4">
-              <Fade cascade >
+              <Fade triggerOnce cascade >
               <ul className="marker:text-viking">
                 <li>React</li>
                 <li>Tailwind CSS</li>
                 <li>Wordpress</li>
               </ul>
               </Fade>
-              <Fade cascade >
+              <Fade triggerOnce cascade >
               <ul className="marker:text-viking">
                 <li>Figma</li>
                 <li>Javascript</li>

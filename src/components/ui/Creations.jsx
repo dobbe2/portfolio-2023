@@ -70,9 +70,9 @@ const features = [
     return (
       <div className="bg-white">
         <SectionContainer id="work">
-        <Slide>
+          <Slide triggerOnce>
             <Heading title="Some Things I’ve Built" />
-            </Slide>
+          </Slide>
           <div className="mt-16 space-y-16">
             {features.map((feature, featureIdx) => (
               <div
@@ -91,7 +91,7 @@ const features = [
                   </a>
                   <Para className="mt-2">{feature.description}</Para>
                   <Para bold className="mt-2">Technologies Used</Para>
-                  <Fade cascade duration={500}>
+                  <Fade triggerOnce cascade duration={500}>
                     <ul className="ml-5 text-lg list-disc marker:text-viking">{
                       feature.tools.map((tool, index) => {             
                         return(<ListItem key={index} item={tool}>
@@ -103,7 +103,7 @@ const features = [
                     <div className="flex gap-2 mt-2">
                     { feature.github ? 
                     <ShineOuter>
-                    <Fade>
+                    <Fade triggerOnce>
                     <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.github}>
                         <FaGithub size={25} color="#5f22d9" />
                         <Shine />
@@ -113,7 +113,7 @@ const features = [
                       : 
                       <></>}
                       <ShineOuter>
-                      <Fade>
+                      <Fade triggerOnce>
                       <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.href}>
                         <FiExternalLink size={25} color="#5f22d9" />
                       </a>
@@ -128,7 +128,7 @@ const features = [
                     'flex-auto lg:col-span-5 lg:row-start-1 '
                   )}
                 >
-                  <Zoom className="overflow-hidden bg-gray-100 rounded-lg shadow-lg aspect-w-5 aspect-h-5">
+                  <Zoom triggerOnce className="overflow-hidden bg-gray-100 rounded-lg shadow-xl aspect-w-5 aspect-h-5">
                     <a target="_blank" rel="noreferrer" href={feature.href}>
                       <img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center" />
                     </a>

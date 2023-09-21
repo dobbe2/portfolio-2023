@@ -18,18 +18,18 @@ export default function Contact() {
 
   return (
     <SectionContainer className="bg-purple-heart" id="contact">
-      <Slide>
+      <Slide triggerOnce>
         <Heading dark title="Contact Me" />
       </Slide>
       <div className="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-1 lg:grid-cols-2">
         <div className="px-0 py-4">
-        <Slide direction='up'>
+        <Slide triggerOnce direction='up'>
           <Para dark>
             I would love to connect with you and discuss opportunities, collaborations, or the deep mysteries of life. Send me a message or connect with me on Discord, GitHub, or LinkedIn!
           </Para>
         </Slide>
         </div>
-      <Fade direction='right'>
+      <Fade triggerOnce direction='right'>
         <form onSubmit={handleSubmit} className="bg-white shadow-sm ring-1 ring-gray-900/5 rounded-xl md:col-span-2">
           <div className="px-4 py-6 sm:p-8">
             <div className="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
