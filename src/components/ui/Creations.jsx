@@ -103,18 +103,22 @@ const features = [
                     <div className="flex gap-2 mt-2">
                     { feature.github ? 
                     <ShineOuter>
+                    <Fade>
                     <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.github}>
                         <FaGithub size={25} color="#5f22d9" />
                         <Shine />
                       </a>
+                      </Fade>
                       </ShineOuter>
                       : 
                       <></>}
                       <ShineOuter>
+                      <Fade>
                       <a className="cursor-pointer" target="_blank" rel="noreferrer" href={feature.href}>
                         <FiExternalLink size={25} color="#5f22d9" />
                       </a>
                       <Shine />
+                      </Fade>
                       </ShineOuter>
                     </div>
                 </div>
