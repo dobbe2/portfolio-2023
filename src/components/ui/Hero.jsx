@@ -17,7 +17,7 @@ export default function Hero() {
             the most exciting groups.
           </p>
           <div className="pb-4 my-4">
-            <Button label="Get In Touch" size="text-xl" />
+            <Button label="Get In Touch" size="text-xl" href="#contact" />
           </div>
         </Fade>
       </div>
