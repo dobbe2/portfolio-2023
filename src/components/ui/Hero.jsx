@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../Button";
 import { Fade } from "react-awesome-reveal";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Hero() {
   return (
@@ -17,7 +18,9 @@ export default function Hero() {
             the most exciting groups.
           </p>
           <div className="pb-4 my-4">
-            <Button label="Get In Touch" size="text-xl" href="#contact" />
+            <AnchorLink href="#contact">
+              <Button label="Get In Touch" size="text-xl" />
+            </AnchorLink>
           </div>
         </Fade>
       </div>
