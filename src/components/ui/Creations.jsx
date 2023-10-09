@@ -9,6 +9,7 @@ import baseball from "../../assets/images/baseballApp.png";
 import lbc from "../../assets/images/LBC1.png";
 import nft from "../../assets/images/MainNFT.jpg";
 import walkeasy from "../../assets/images/walkEasy1.png";
+import cpg from "../../assets/images/cpg.png";
 import { FiExternalLink } from "react-icons/fi"
 import { FaGithub } from "react-icons/fa"
 import ListItem from '../ListItem';
@@ -32,6 +33,14 @@ const features = [
       imageAlt: 'Detail of zipper pull with tan leather and silver rivet.',
       tools: ['WordPress', 'HTML', 'CSS'],
       href: 'https://leebrannamconstruction.com'
+    },
+    {
+      name: 'Craft Group Website',
+      description: 'Built a WordPress website for a craft group to showcase items, advertise events, and drive sales. ',
+      imageSrc: cpg,
+      imageAlt: 'Landing for craft group website',
+      tools: ['WordPress', 'HTML', 'CSS'],
+      href: 'https://checkeredpastgals.com/'
     },
     {
         name: 'ZAP NFT Marketplace',
