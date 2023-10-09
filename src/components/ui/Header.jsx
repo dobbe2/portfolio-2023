@@ -50,26 +50,26 @@ const destinations = [
   },
   {
     name: "Experience",
-    description: "Speak directly to your customers in a more meaningful way.",
+    description: "A summary of my professional and freelance work experience.",
     href: "#experience",
     icon: CodeBracketSquareIcon,
   },
   {
     name: "Work",
-    description: "Your customers' data will be safe and secure.",
+    description: "Descriptions and visuals of past and current projects.",
     href: "#work",
     icon: PuzzlePieceIcon,
   },
   {
     name: "Contact",
-    description: "Connect with third-party tools that you're already using.",
+    description: "A place to reach out to me.",
     href: "#contact",
     icon: DevicePhoneMobileIcon,
   },
   {
     name: "Resume",
     description:
-      "Build strategic funnels that will drive your customers to convert",
+      "Link to my current Resume",
     href: "#resume",
     icon: DocumentCheckIcon,
   },
