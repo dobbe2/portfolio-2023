@@ -57,7 +57,7 @@ const features = [
         imageSrc: baseball,
         imageAlt: 'Picture of the baseball game app with a game in progress.',
         tools: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-        href: 'https://github.com/dobbe2/baseballScoreboard',
+        href: 'https://dobbe2.github.io/baseballScoreboard/',
         github: 'https://github.com/dobbe2/baseballScoreboard',
     },
     {
