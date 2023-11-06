@@ -13,6 +13,7 @@ import NavLink from "../Nav-Link";
 import Button from "../Button";
 import Logo from "../Logo";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import PDF from "../../assets/files/JamesDobbeResume2023.pdf";
 
 //scroll function
 function useScrollDirection() {
@@ -66,13 +67,13 @@ const destinations = [
     href: "#contact",
     icon: DevicePhoneMobileIcon,
   },
-  {
-    name: "Resume",
-    description:
-      "Link to my current Resume",
-    href: "#resume",
-    icon: DocumentCheckIcon,
-  },
+  // {
+  //   name: "Resume",
+  //   description:
+  //     "Link to my current Resume",
+  //   href: "#resume",
+  //   icon: DocumentCheckIcon,
+  // },
 ];
 
 export default function Navbar() {
@@ -114,7 +115,9 @@ export default function Navbar() {
               </Popover>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <Button label="Resume" className="text-base" />
+              <a href = {PDF} target="_blank">
+                <Button label="Resume" className="text-base"/>
+              </a>
             </div>
           </div>
         </div>
@@ -160,9 +163,15 @@ export default function Navbar() {
                           {item.name}
                           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-viking"></span>
                         </div>
+                        
                       </AnchorLink>
                     ))}
                   </nav>
+                  <div className="flex items-center mt-6 md:ml-12">
+                    <a href = {PDF} target="_blank">
+                      <Button label="Resume" className="text-base"/>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
