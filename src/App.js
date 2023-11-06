@@ -19,7 +19,7 @@ function App() {
       <Creations />
       <EasterEgg />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
