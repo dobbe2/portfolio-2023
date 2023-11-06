@@ -7,6 +7,7 @@ import Experience from './components/ui/Experience';
 import Creations from './components/ui/Creations';
 import EasterEgg from './components/ui/EasterEgg';
 import Contact from './components/ui/Contact';
+import Footer from './components/ui/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Creations />
       <EasterEgg />
       <Contact />
+      <Footer />
     </div>
   );
 }
