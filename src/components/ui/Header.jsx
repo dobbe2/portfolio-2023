@@ -6,7 +6,6 @@ import {
   PuzzlePieceIcon,
   Bars3Icon,
   DevicePhoneMobileIcon,
-  DocumentCheckIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import NavLink from "../Nav-Link";
@@ -67,13 +66,6 @@ const destinations = [
     href: "#contact",
     icon: DevicePhoneMobileIcon,
   },
-  // {
-  //   name: "Resume",
-  //   description:
-  //     "Link to my current Resume",
-  //   href: "#resume",
-  //   icon: DocumentCheckIcon,
-  // },
 ];
 
 export default function Navbar() {
@@ -115,7 +107,7 @@ export default function Navbar() {
               </Popover>
             </Popover.Group>
             <div className="flex items-center md:ml-12">
-              <a href = {PDF} target="_blank">
+              <a href = {PDF} target="_blank" rel="noreferrer">
                 <Button label="Resume" className="text-base"/>
               </a>
             </div>
@@ -168,7 +160,7 @@ export default function Navbar() {
                     ))}
                   </nav>
                   <div className="flex items-center mt-6 md:ml-12">
-                    <a href = {PDF} target="_blank">
+                    <a href = {PDF} target="_blank" rel="noreferrer">
                       <Button label="Resume" className="text-base"/>
                     </a>
                   </div>
