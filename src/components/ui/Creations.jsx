@@ -10,6 +10,7 @@ import lbc from "../../assets/images/LBC1.png";
 import nft from "../../assets/images/MainNFT.jpg";
 import walkeasy from "../../assets/images/walkEasy1.png";
 import cpg from "../../assets/images/cpg.png";
+import portfolio from "../../assets/images/portfolio2023.png"
 import { FiExternalLink } from "react-icons/fi"
 import { FaGithub } from "react-icons/fa"
 import ListItem from '../ListItem';
@@ -44,7 +45,7 @@ const features = [
     },
     {
         name: 'ZAP NFT Marketplace',
-        description: 'Remotely worked with developers and designers from around the world, contributing to the redesign of a large application containing an NFT marketplace, Oracles Price Feeds, and other Exchanges. Designed with mobile development as top priority.  Project can be found at https://app.zap.org/nft (requires digital wallet to view all content). ',
+        description: 'Remotely worked with developers and designers from around the world, contributing to the redesign of a large application containing an NFT marketplace, Oracles Price Feeds, and other Exchanges. Designed with mobile development as top priority.',
         imageSrc: nft,
         imageAlt: 'Frontpage layout of the ZAP Protocol NFT Marketplace',
         tools: ['React', 'Typescript', 'Figma', 'Styled-Components', 'Storybook'],
@@ -53,13 +54,23 @@ const features = [
     },
     {
         name: 'Interactive Baseball Scoreboard',
-        description: 'Developed a visual representation of a baseball scoreboard.  Programmed the many conditional situations that occur during a ball and strike count, and the runners on the basepaths. Focused on heavy game logic.',
+        description: 'Developed a visual representation of a baseball scoreboard.  Programmed the many situations that occur during a ball and strike count, and the runners on the basepaths. Built with an abundance of conditional logic.',
         imageSrc: baseball,
         imageAlt: 'Picture of the baseball game app with a game in progress.',
         tools: ['HTML', 'CSS', 'Javascript', 'jQuery'],
         href: 'https://dobbe2.github.io/baseballScoreboard/',
         github: 'https://github.com/dobbe2/baseballScoreboard',
     },
+    {
+      name: 'Personal Portfolio',
+      description: 'Created a new personal portfolio page to showcase my experiences as a developer, as well as conveying my personality and attention to detail. ',
+      imageSrc: portfolio,
+      imageAlt: 'Screenshot of this portfolio',
+      tools: ['React', 'Typescript', 'Next.js', 'Tailwind CSS', 'Figma'],
+      href: 'https://dobbe2.github.io/portfolio-2023',
+      github: 'https://github.com/dobbe2/portfolio-2023',
+
+  },
     {
         name: 'Anagram Checker',
         description: 'A project created to check if two sets of letters or words are anagrams of each other.',
