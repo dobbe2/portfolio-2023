@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio-2023/static/css/main.82a6ba71.css",
-    "main.js": "/portfolio-2023/static/js/main.987247f3.js",
+    "main.js": "/portfolio-2023/static/js/main.54cfd8f5.js",
     "static/js/787.ef0c4325.chunk.js": "/portfolio-2023/static/js/787.ef0c4325.chunk.js",
     "static/media/LBC1.png": "/portfolio-2023/static/media/LBC1.3414b1b0820d5b7d4e45.png",
     "static/media/baseballApp.png": "/portfolio-2023/static/media/baseballApp.0ca2d791a7c174e4b480.png",
     "static/media/me.jpg": "/portfolio-2023/static/media/me.eb6d264fbc079e909d81.jpg",
     "static/media/anagram.png": "/portfolio-2023/static/media/anagram.5011958b342f0ffcbc58.png",
     "static/media/walkEasy1.png": "/portfolio-2023/static/media/walkEasy1.621e14750c1816f1a3a6.png",
+    "static/media/portfolio2023.png": "/portfolio-2023/static/media/portfolio2023.81548e52c33a899e3c73.png",
     "static/media/MainNFT.jpg": "/portfolio-2023/static/media/MainNFT.b5bd51e640f5bfdf750e.jpg",
     "static/media/cpg.png": "/portfolio-2023/static/media/cpg.b114e3a0683c4db1399c.png",
     "static/media/JamesDobbeResume2023.pdf": "/portfolio-2023/static/media/JamesDobbeResume2023.776696c65fd2fc5d749d.pdf",
@@ -15,11 +16,11 @@
     "static/media/LogoViking.svg": "/portfolio-2023/static/media/LogoViking.ae7ca83d67cbd6f500ace16868eda02f.svg",
     "index.html": "/portfolio-2023/index.html",
     "main.82a6ba71.css.map": "/portfolio-2023/static/css/main.82a6ba71.css.map",
-    "main.987247f3.js.map": "/portfolio-2023/static/js/main.987247f3.js.map",
+    "main.54cfd8f5.js.map": "/portfolio-2023/static/js/main.54cfd8f5.js.map",
     "787.ef0c4325.chunk.js.map": "/portfolio-2023/static/js/787.ef0c4325.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82a6ba71.css",
-    "static/js/main.987247f3.js"
+    "static/js/main.54cfd8f5.js"
   ]
 }
