@@ -1,4 +1,3 @@
-import { PaperClipIcon } from '@heroicons/react/20/solid';
 import Heading from '../Heading';
 import SectionContainer from '../Section-Container';
 import Para from '../Para';
@@ -27,7 +26,7 @@ export default function Experience() {
           <Title dark>What I've Done</Title>
             <div className="grid lg:gap-4">
               <Fade triggerOnce cascade duration={500}>
-                <ul role="list" className='text-lg list-disc marker:text-viking'>
+                <ul className='text-lg list-disc marker:text-viking'>
                   <ListItem dark item="Work with businesses to design and develop websites and branding/logos" />
                   <ListItem dark item="Assist in developing creative content" />
                   <ListItem dark item="Work with client to ensure shared vision and expectations" />
@@ -52,7 +51,7 @@ export default function Experience() {
             <Title dark>What I've Done</Title>
             <div className="grid lg:gap-4">
               <Fade triggerOnce cascade duration={500}>
-                <ul role="list" className='text-lg list-disc marker:text-viking'>
+                <ul className='text-lg list-disc marker:text-viking'>
                     <ListItem dark item="Used design tools such as Figma and Storybook to create reusable components for the entire application and to build and test all components" />
                     <ListItem dark item="Worked alongside design team through handoffs and bridges. Collaborated daily with front-end and design teams to keep progress pushing forward and give and receive feedback on current tasks" />
                     <ListItem dark item="Received and reviewed changes to the Design System and created tickets to assign to developers" />
