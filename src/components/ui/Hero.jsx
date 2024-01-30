@@ -13,9 +13,7 @@ export default function Hero() {
           <h1 className="my-4 text-6xl font-bold text-white">James Dobbe</h1>
           <h1 className="text-6xl text-mercury">I am a front end developer.</h1>
           <p className="my-4 text-xl text-mercury">
-            I design and build custom websites for cool people, just like you! I
-            am currently working as a freelancer, designing brands and sites for
-            the most exciting groups.
+            I am a versatile web developer and freelancer dedicated to creating dynamic online experiences. Bringing a blend of creativity and technical prowess to every project, I specialize in crafting unique and user-friendly solutions. Let's collaborate to elevate your digital presence.
           </p>
           <div className="pb-4 my-4">
             <AnchorLink href="#contact">
