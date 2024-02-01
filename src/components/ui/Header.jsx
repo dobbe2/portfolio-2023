@@ -12,7 +12,7 @@ import NavLink from "../Nav-Link";
 import Button from "../Button";
 import Logo from "../Logo";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import PDF from "../../assets/files/JamesDobbeResume2023.pdf";
+import PDF from "../../assets/files/JamesDobbeResume2024.pdf";
 
 //scroll function
 function useScrollDirection() {
