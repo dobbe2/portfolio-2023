@@ -66,7 +66,7 @@ const features = [
       description: 'Created a new personal portfolio page to showcase my experiences as a developer, as well as conveying my personality and attention to detail. ',
       imageSrc: portfolio,
       imageAlt: 'Screenshot of this portfolio',
-      tools: ['React', 'Typescript', 'Next.js', 'Tailwind CSS', 'Figma'],
+      tools: ['React', 'Typescript', 'Tailwind CSS', 'Figma'],
       href: 'https://dobbe2.github.io/portfolio-2023',
       github: 'https://github.com/dobbe2/portfolio-2023',
 
