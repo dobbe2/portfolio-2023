@@ -81,7 +81,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between p-6 md:justify-start md:space-x-10">
           <div>
             <a href="#" className="flex">
-              <span className="sr-only">James Dobbe Portfolio</span>
+              <span className="sr-only">James Dobbe Portfolio 2024</span>
               <Logo />
             </a>
           </div>
